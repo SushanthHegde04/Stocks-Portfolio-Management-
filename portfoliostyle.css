@@ -1,0 +1,249 @@
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.user {
+ 
+    width: 25%;
+    height: 40%;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.82); /* Transparent white background */
+    box-shadow: 10px 20px 20px rgba(20, 91, 121, 0.799);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+   
+    text-align: center;
+}
+
+/* Style for the image (round shape) */
+.user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #fff; /* Solid white background for the image */
+}
+
+/* Style for list items */
+.user ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for individual list items as rectangles with shadows */
+.user li {
+    font-size: 18px;
+    
+    color: #333;
+    font-family: Arial, sans-serif; /* Set the font family */
+    font-weight: bold; /* Set the font weight to bold */
+    background-color:rgba(175, 234, 214, 0.664); /* Background color for list items (e.g., blue) */
+    border: 1px solid #96bce5; /* Border color matching the background */
+     padding: 10px;
+    /* Add padding for spacing */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 5px 5px 6px rgba(20, 61, 185, 0.53); /* Add a shadow effect */
+    margin: 10px 30px; /* Add margin for spacing between items */
+    width: 80%; /* Fixed width for the list items */
+    /*0margin-left: 10px;*/
+} 
+.seccon
+{
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex: 65%;
+
+}
+
+.Allocation
+{
+    margin-bottom: 0px;
+    font-size: 20px;
+    flex: 100%;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 30%;
+    width: 100%; /* Change to a suitable percentage */
+    height: 20%;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.82); /* Transparent white background */
+    box-shadow: 10px 20px 20px rgba(20, 91, 121, 0.799);
+    border-radius: 10px;
+    text-align: center;
+    color: #bbd3ed;
+    font-weight: 500;
+   align-items: center;
+   justify-content: center;
+    
+}
+
+ .balance
+{
+ font-size: 20px;
+padding-top: 5px;
+padding-left: 10px;
+margin-top: 5px;
+width: 30%;
+height: 55%;
+padding: 20px;
+margin: 10px;
+background-color: rgba(0, 0, 0, 0.82); /* Transparent white background */
+ box-shadow: 10px 20px 20px rgba(20, 91, 121, 0.799);
+border-radius: 10px;
+text-align: center;
+color: #bbd3ed;
+font-weight: 500;
+margin-top: 0px;
+
+}  
+/* styles.css */
+
+/* Style for the add-button */
+.add-button {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    box-shadow: -2px 2px 3px rgba(176, 160, 19, 0.68);
+    border-radius: 25%;
+}
+
+/* Style for the sell-button */
+.sell-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 25%;
+    box-shadow: -2px 2px 3px rgb(99, 92, 92);
+}
+.sell-button:hover
+{
+    background-color: #94cce4;
+}
+
+
+ .INVESTED {
+        font-size: 20px;
+        padding: 5px 10px;
+        margin: 5px;
+        width: 58%;
+        height: 300px; /* Set a fixed height for scrolling */
+        background-color: rgba(0, 0, 0, 0.82);
+        box-shadow: 10px 20px 20px rgba(20, 91, 121, 0.799);
+        border-radius: 10px;
+        text-align: center;
+        color: #bbd3ed;
+        font-weight: 500;
+        overflow: auto; /* Make the content scrollable */
+        transition: transform 0.2s ease-in-out;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+       
+    }
+
+    .INVESTED:hover {
+        transform: scale(1.05); /* Scale the div up slightly on hover */
+    }
+
+    .content-row {
+        margin-bottom: 10px; /* Add some spacing between rows */
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table, th, td {
+        border: 0px solid #94cce4;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #1a1b1ba7;
+        color: rgba(175, 234, 214, 0.664)
+    }
+
+    tr:nth-child(even) {
+        background-color: rgba(152, 161, 167, 0.568);
+    }
+
+    /* Add some hover effect */
+    tr:hover {
+        background-color: #202122;
+    }
+
+    .stocks {
+        font-size: 20px;
+        padding: 5px 10px;
+        margin: 5px;
+        width: 100%;
+        height: 100%; /* Set a fixed height for scrolling */
+        background-color: rgba(0, 0, 0, 0.82);
+        box-shadow: 10px 20px 20px rgba(20, 91, 121, 0.799);
+        border-radius: 10px;
+        text-align: center;
+        color: #bbd3ed;
+        font-weight: 500;
+        overflow: auto; /* Make the content scrollable */
+        transition: transform 0.2s ease-in-out;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+       
+    }
+
+
+/* Your existing styles... */
+
+.quantity-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #283593; /* Dark Blue */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.quantity-box label,
+.quantity-box input,
+.quantity-box button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.quantity-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.quantity-box button {
+    background-color: #FF9800; /* Light Orange */
+    color: #ffffff; /* White text */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quantity-box button:hover {
+    background-color: #F57C00; /* Darker Orange on hover */
+}
