@@ -13,12 +13,10 @@ Backend: MySQL, PHP
 Frontend: HTML, CSS, JavaScript
 Usage
 Clone the Repository: git clone https://github.com/yourusername/stock-portfolio
-Setup Database: [Provide instructions to set up MySQL database]
-Launch the Application: Open index.html in your web browser to access the platform.
 Future Enhancements
 Integration of advanced analytics for better decision-making.
 Extension to mobile platforms for greater accessibility.
-Contributing
+
 Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests.
 
 Disclaimer
