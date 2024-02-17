@@ -1,7 +1,7 @@
 <?php
 $hostname = "localhost";
-$username = "root";
-$password = "sush@2003";
+$username = "";
+$password = "";
 $database = "Stockguru";
 include_once 'functions.php';
 $mysqli = new mysqli($hostname, $username, $password, $database);
