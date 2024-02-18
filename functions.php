@@ -19,19 +19,51 @@ function displayUserInfo($row) {
     echo '<li> '. $row["UserID"] . '</li>';
     echo '<li> ' . $row["UName"] .' </li>';
     echo '<li> '. $row["Email"] . '</li>';
-    echo '<li> change Password</li>';
-    echo '<li>Add Phone Number<li>';
+
+    echo '<li><button class="delete-account-button" onclick=" delccount(' .$row["UserID"]. ')">Delete Account</button></li>';
     echo '</ul>';
     echo '</div>';
 }
+echo "
+<script>
 
+function delccount(UserId) {
+    window.location.href = 're.html';
+    alert('ARE YOU SURE!!!!'); 
+
+    fetch('delete.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: 'userId=' + userId,
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Delete Successful'); // Alert for successful deletion
+            // Redirect to re.html after successful deletion
+        } else {
+            alert('Failed to delete account'); // Alert for failed deletion
+            window.location.href = 're.html'; // Redirect to re.html even if deletion fails
+        }
+    })
+    .catch(error => {
+        console.error('Error deleting account:', error);
+        alert('Error deleting account'); // Alert for any error during deletion
+    });
+}
+
+</script>
+";
 function displayAllocation() {
     echo '<div class="Allocation" style="margin: 10px;">';
     echo "<br>";
     echo "Allocated Money";
+   
     echo "<br>";
     echo "<br>";
-    echo "$1000000"  ;
+    echo "Rs1000000"  ;
+
     echo "<br>";
     echo "<br>";
     echo '</div>';
@@ -73,7 +105,6 @@ function displayInvestedStocks($userID) {
     $sql = "SELECT
         ons.Stockid,
         st.StockSymbol,
-        st.IPODate,
         st.CurrentPrice,
         ons.Quantity
     FROM
@@ -110,7 +141,6 @@ function displayInvestedStocks($userID) {
             echo "<td>" . $row["CurrentPrice"] . "</td>";
             echo "<td>" . $row["Quantity"] . "</td>";
             echo "<td><button class='sell-button' onclick='openNewPage(this)' data-stock-id='" . $row["Stockid"] . "' data-user-id='$userID' data-type='sell'>Sell</button></td>";
-
             echo "</tr>";
         }
         
