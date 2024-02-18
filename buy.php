@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 $userId = $_POST["userId"];
                 $stockId = $_POST["stockId"];
 
-                // Check if the quantity form was submitted
+                // Checking if the quantity form was submitted
                 if (isset($_POST["quantity"])) {
                     $quantity = $_POST["quantity"];
 
