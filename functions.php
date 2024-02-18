@@ -29,11 +29,9 @@ function displayAllocation() {
     echo '<div class="Allocation" style="margin: 10px;">';
     echo "<br>";
     echo "Allocated Money";
-    echo "PROFIT";
     echo "<br>";
     echo "<br>";
     echo "$1000000"  ;
-    echo "$1200000";
     echo "<br>";
     echo "<br>";
     echo '</div>';
